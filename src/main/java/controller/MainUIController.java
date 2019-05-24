@@ -158,7 +158,12 @@ public class MainUIController implements Initializable {
     public void show_picture(){
 
         files = new ArrayList<File>();
-        pagination.setPrefSize(1131,665);
+        if(!lableanchorpane.isVisible()){
+            pagination.setPrefSize(1131,665);
+        }
+        else{
+            pagination.setPrefSize(790,665);
+        }
         picture_show.getChildren().remove(0,picture_show.getChildren().size());
         for(PictureInstance tmp :pictures){
             picture_show.getChildren().add(tmp);
