@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="next" prefHeight="711.0" prefWidth="1372.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.controller.PictureReaderController">
+   <children>
+      <Text fx:id="hint" fill="#cd3817" layoutX="440.0" layoutY="401.0" strokeType="OUTSIDE" strokeWidth="0.0" text="图片已到尽头" textAlignment="CENTER" wrappingWidth="320.3203125">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <JFXButton id="last" layoutX="140.0" layoutY="350.0" mnemonicParsing="false" onAction="#pre" prefHeight="150.0" prefWidth="75.0" text="上一张" textFill="WHITE">
+         <padding>
+            <Insets top="120.0" />
+         </padding></JFXButton>
+      <JFXButton id="next1" layoutX="1170.0" layoutY="340.0" mnemonicParsing="false" onAction="#next" prefHeight="150.0" prefWidth="75.0" text="下一张" textFill="WHITE">
+         <padding>
+            <Insets top="120.0" />
+         </padding></JFXButton>
+      <HBox id="hbox" layoutX="500.0" layoutY="620.0" prefHeight="120.0" prefWidth="880.0">
+         <children>
+            <JFXButton id="bigger" mnemonicParsing="false" onAction="#enlarge" prefHeight="55.0" prefWidth="70.0" text="放大">
+               <padding>
+                  <Insets top="45.0" />
+               </padding></JFXButton>
+            <JFXButton id="smaller" mnemonicParsing="false" onAction="#small" prefHeight="55.0" prefWidth="70.0" text="缩小">
+               <padding>
+                  <Insets top="45.0" />
+               </padding></JFXButton>
+            <JFXButton id="turnover" mnemonicParsing="false" onAction="#roate" prefHeight="70.0" prefWidth="70.0" text="旋转" textFill="WHITE">
+               <padding>
+                  <Insets top="6.0" />
+               </padding></JFXButton>
+            <JFXButton fx:id="mirror" onAction="#setMirror" prefHeight="70.0" prefWidth="70.0" text="镜像" textFill="WHITE">
+               <padding>
+                  <Insets top="45.0" />
+               </padding></JFXButton>
+            <JFXButton id="play" mnemonicParsing="false" onAction="#play" prefHeight="70.0" prefWidth="70.0" text="PPT播放" textFill="WHITE">
+               <padding>
+                  <Insets top="55.0" />
+               </padding></JFXButton>
+            <JFXButton fx:id="beautify" mnemonicParsing="false" onAction="#beautify" prefHeight="70.0" prefWidth="70.0" text="美化" textFill="WHITE">
+               <padding>
+                  <Insets top="55.0" />
+               </padding></JFXButton>
+         </children>
+      </HBox>
+      <JFXButton id="turnback1" layoutX="31.0" layoutY="15.0" mnemonicParsing="false" onAction="#back" prefHeight="50.0" prefWidth="70.0" text="" />
+      <Label layoutY="600.0" prefHeight="120.0" prefWidth="500.0" style="-fx-background-color: #2E2E2E" />
+      <ScrollPane fx:id="sp1" layoutX="270.0" layoutY="20.0" prefHeight="581.0" prefWidth="850.0">
+         <content>
+            <AnchorPane fx:id="AP1" minHeight="0.0" minWidth="0.0" prefHeight="576.0" prefWidth="846.0">
+               <children>
+                  <StackPane fx:id="show" nodeOrientation="LEFT_TO_RIGHT" prefHeight="581.0" prefWidth="850.0">
+                     <children>
+                        <ImageView fx:id="picture_show" fitHeight="500.0" fitWidth="600.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" StackPane.alignment="CENTER" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets left="20.0" />
+                     </opaqueInsets>
+                  </StackPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="711.0" prefWidth="1372.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.controller.PPT">
+   <children>
+      <StackPane layoutX="95.0" layoutY="70.0" prefHeight="508.0" prefWidth="922.0">
+         <children>
+            <ImageView fx:id="imageview" fitHeight="376.0" fitWidth="603.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </StackPane>
+      <HBox layoutX="97.0" layoutY="593.0" prefHeight="70.0" prefWidth="368.0">
+         <children>
+            <JFXButton id="pptstart" mnemonicParsing="false" onAction="#play" prefHeight="65.0" prefWidth="85.0" text="播放" textFill="WHITE">
+               <padding>
+                  <Insets top="65.0" />
+               </padding></JFXButton>
+            <JFXButton id="pptstop" mnemonicParsing="false" onAction="#stop" prefHeight="65.0" prefWidth="80.0" text="停止" textFill="WHITE">
+               <padding>
+                  <Insets top="65.0" />
+               </padding></JFXButton>
+            <Slider />
+         </children>
+      </HBox>
+      <JFXButton id="pptback" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" prefHeight="50.0" prefWidth="70.0" />
+   </children>
+</AnchorPane>

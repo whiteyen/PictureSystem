@@ -1,0 +1,102 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.root {
+-fx-background-color:#2E2E2E;
+}
+#next2{
+-fx-background-color:#2E2E2E;
+-fx-border-color:#2E2E2E;
+}
+#sp1{
+-fx-border-color:#2E2E2E;
+}
+#AP1{
+-fx-background-color:#2E2E2E;
+-fx-border-color:#2E2E2E;
+}
+#turnback1{
+-fx-background-image: url(/resources/image/turnback2.png);
+-fx-background-size:cover;
+
+}
+#turnback1:hover{
+-fx-background-image: url(/resources/image/turnback.png);
+-fx-background-size:cover;
+}
+#smaller{
+-fx-background-image: url(/resources/image/small1.png);
+-fx-background-size:cover;
+-fx-text-fill:white;
+}
+
+#bigger{
+-fx-background-image: url(/resources/image/big1.png);
+-fx-background-size:cover;
+-fx-text-fill:white;
+}
+#bigger:hover{
+
+}
+#turnover{
+-fx-background-image: url(/resources/image/turnover.png);
+-fx-background-size:cover;
+-fx-text-fill:white;
+}
+#turnover:hover{
+-fx-text-fill:white;
+}
+#play{
+-fx-background-image: url(/resources/image/Ppt.png);
+-fx-background-size:cover;
+}
+#play:hover{
+
+}
+#last{
+-fx-background-image: url(/resources/image/lastphoto.png);
+-fx-background-size:cover;
+}
+#next1{
+-fx-background-image: url(/resources/image/nextphoto.png);
+-fx-background-size:cover;
+}
+#hbox{
+-fx-spacing: 10;
+-fx-background-color:#2E2E2E;
+}
+#pptback{
+-fx-background-image: url(/resources/image/turnback2.png);
+-fx-background-size:cover;
+}
+#pptback:hover{
+-fx-background-image: url(/resources/image/turnback.png);
+-fx-background-size:cover;
+}
+#pptstart{
+-fx-background-image: url(/resources/image/pptstar.png);
+-fx-background-position:0px 0px;
+-fx-background-size:80px 75px;
+}
+#pptstop{
+
+-fx-background-image: url(/resources/image/pptstop.png);
+-fx-background-position:0px 0px;
+-fx-background-size:80px 75px;
+}
+#mirror{
+
+-fx-background-image: url(/resources/image/mirror.png);
+-fx-background-size:cover;
+}
+#beautify{
+-fx-background-image: url(/resources/image/beautify.png);
+-fx-background-size:cover;
+}
+#show{
+-fx-background-color:#2E2E2E;
+-fx-border-color:#2E2E2E;
+}
+
+#beautifyBack{
+-fx-background-image: url(/resources/image/turnback.png);
+-fx-background-size:cover;
+}

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="711.0" prefWidth="1372.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.controller.MainUIController">
+   <children>
+      <TreeView fx:id="tv" editable="true" layoutY="61.0" prefHeight="675.0" prefWidth="234.0" />
+      <FlowPane fx:id="picture_show" layoutX="235.0" layoutY="100.0" prefHeight="300.0" prefWidth="600.0">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding></FlowPane>
+      <HBox fx:id="hbox" layoutX="235.0" layoutY="30.0" prefHeight="31.0" prefWidth="1131.0">
+         <children>
+            <Button fx:id="big_scene" mnemonicParsing="false" onAction="#setBig_scene" text="big">
+               <opaqueInsets>
+                  <Insets left="10.0" />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets left="10.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="medium_scene" mnemonicParsing="false" onAction="#setMedium_scene" text="midium">
+               <HBox.margin>
+                  <Insets left="10.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="small_scene" mnemonicParsing="false" onAction="#setSmall_scene" text="small">
+               <HBox.margin>
+                  <Insets left="10.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+            <Label prefHeight="20.0" prefWidth="360.0" style="-fx-background-color: #3B3B3B;;" text=".." />
+            <JFXTextField fx:id="labelText" promptText="标签搜索" style="-fx-text-fill: white;" unFocusColor="#3b3b3b" />
+            <Button fx:id="endSer" mnemonicParsing="false" onAction="#searchEnd" prefHeight="15.0" prefWidth="20.0" style="-fx-background-color: #3B3B3B;" />
+            <Button fx:id="ser" mnemonicParsing="false" onAction="#searchPicture" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: #3B3B3B;" />
+
+         </children>
+      </HBox>
+      <Label id="lable1" layoutY="30.0" prefHeight="31.0" prefWidth="235.0" text="我的文件">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <padding>
+            <Insets left="65.0" />
+         </padding>
+      </Label>
+      <Label id="lable0" layoutX="235.0" prefHeight="30.0" prefWidth="1131.0" text="预览图" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <padding>
+            <Insets left="5.0" />
+         </padding></Label>
+      <AnchorPane id="lableanchorpane" fx:id="lableanchorpane" layoutX="1025.0" prefHeight="711.0" prefWidth="341.0">
+         <children>
+            <JFXTextArea fx:id="add" focusColor="#2e2e2e" layoutX="41.0" layoutY="308.0" prefHeight="70.0" prefWidth="240.0" promptText="点击编辑标签" style="-fx-background-color: #2E2E2E;-fx-text-fill:white;" unFocusColor="#2e2e2e">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextArea>
+            <Label layoutX="40.0" layoutY="420.0" text="基本信息：" textFill="WHITE" />
+            <Separator layoutX="71.0" layoutY="400.0" prefHeight="3.0" prefWidth="194.0" />
+            <VBox layoutX="74.0" layoutY="44.0" prefHeight="200.0" prefWidth="203.0" spacing="10.0">
+               <children>
+                  <ImageView fx:id="selected" fitHeight="200.0" fitWidth="200.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" />
+                  <Label fx:id="selectLabel" prefHeight="15.0" prefWidth="202.0">
+                     <padding>
+                        <Insets left="45.0" />
+                     </padding></Label>
+               </children>
+            </VBox>
+            <Label layoutX="42.0" layoutY="450.0" text="图片名称" textFill="#e8e2e2">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="42.0" layoutY="475.0" text="图片大小" textFill="#e8e2e2">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="42.0" layoutY="500.0" text="图片类型" textFill="#e8e2e2">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="42.0" layoutY="525.0" text="图片尺寸" textFill="#e8e2e2">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="585.0" text="图片已有标签：" textFill="white" />
+            <Separator layoutX="66.0" layoutY="570.0" prefWidth="200.0" />
+            <Separator layoutX="67.0" layoutY="290.0" prefWidth="200.0" />
+            <JFXButton fx:id="addLabel" layoutX="297.0" layoutY="355.0" onAction="#labelAdder" text="+" />
+            <Label fx:id="pictureName" layoutX="120.0" layoutY="450.0" prefWidth="200.0" textFill="#e8e2e2" />
+            <Label fx:id="fileSize" layoutX="120.0" layoutY="475.0" prefWidth="200.0" textFill="#e8e2e2" />
+            <Label fx:id="pictureType" layoutX="120.0" layoutY="500.0" prefWidth="200.0" textFill="#e8e2e2" />
+            <Label fx:id="pictureSize" layoutX="120.0" layoutY="525.0" prefWidth="200.0" textFill="#e8e2e2" />
+            <JFXTextArea fx:id="exist" editable="false" focusColor="#2e2e2e" layoutX="37.0" layoutY="605.0" prefHeight="70.0" prefWidth="286.0" promptText="无标签" style="-fx-background-color: #2e2e2e; -fx-text-fill: white;" unFocusColor="#2e2e2e" />
+            <Button fx:id="put" layoutY="297.0" mnemonicParsing="false" onAction="#cccc" prefHeight="100.0" prefWidth="40.0" />
+            <TextField fx:id="rename" layoutX="115.0" layoutY="415.0" prefHeight="30.0" prefWidth="183.0" />
+            <Label fx:id="labelb" prefHeight="30.0" prefWidth="341.0" text="图片详情" textAlignment="CENTER">
+               <padding>
+                  <Insets left="150.0" />
+               </padding>
+            </Label>
+         </children></AnchorPane>
+      <Pagination fx:id="pagination" layoutX="235.0" layoutY="61.0" prefHeight="680.0" prefWidth="790.0" />
+      <Label id="labelc" prefHeight="30.0" prefWidth="235.0" />
+      <Button fx:id="ex" layoutX="1320.0" layoutY="297.0" mnemonicParsing="false" onAction="#expand" prefHeight="100.0" prefWidth="40.0" text="" />
+
+   </children>
+</AnchorPane>

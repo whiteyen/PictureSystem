@@ -1,0 +1,63 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.root {
+	-fx-background-image: url(/resources/image/33444.jpg);
+	-fx-background-position:0px 0px;
+	-fx-background-size:1366px 718px;
+	-fx-font-size: 16px;
+	-fx-font-color:biack;
+    -fx-font-family: "Arial Black";  
+}
+#anchorpane1{
+-fx-background-color:white;
+-fx-background-radius: 10.0;
+}
+#login{
+    -fx-text-fill: black;
+    -fx-background-radius: 10.0;
+    -fx-background-color: linear-gradient(#008080, #191970);
+    -fx-font-family: "Arial Black";
+    -fx-padding: 5;
+}
+#login:hover{
+	-fx-cursor: hand;
+	-fx-background-color: linear-gradient(#191970, #008080);
+}
+#title1{
+	-fx-text-fill: #606064;
+	-fx-font-size: 32px;
+   -fx-font-family: "黑体";
+
+}
+#register{
+	-fx-font-size: 16px;
+	-fx-text-fill: black;
+}
+#register:hover{
+	-fx-cursor: hand;
+	-fx-text-fill: #008080;
+}
+#back1{
+	-fx-background-image:url(/resources/image/turnback2.png);
+	-fx-background-size:cover;
+}
+#back1:hover{
+	-fx-cursor: hand;
+	-fx-background-image:url(/resources/image/turnback3.png);
+	-fx-background-size:cover;
+}
+#sure1{
+	-fx-text-fill: black;
+    -fx-background-color: #66FF66;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-font-family: "Arial Black";
+    -fx-padding: 5;
+}
+#sure1:hover{
+	-fx-background-color: #33FF33;
+	-fx-cursor: hand;
+}
+#pass_toggle{
+	-fx-display: none;
+	-fx-display: inline-block;
+}

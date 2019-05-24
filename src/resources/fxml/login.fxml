@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="anchorpane" prefHeight="712.0" prefWidth="1372.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.controller.LoginController">
+   <children>
+      <AnchorPane id="anchorpane1" layoutX="96.0" layoutY="71.0" opacity="0.70" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="188.0">
+         <children>
+            <Label id="title1" alignment="CENTER" contentDisplay="RIGHT" layoutX="114.0" layoutY="6.0" prefHeight="38.0" prefWidth="290.0" text="相片管理系统">
+               <opaqueInsets>
+                  <Insets top="50.0" />
+               </opaqueInsets>
+            </Label>
+            <Label layoutX="18.0" layoutY="71.0" prefHeight="36.0" prefWidth="79.0" text="用户名">
+               <opaqueInsets>
+                  <Insets left="50.0" />
+               </opaqueInsets>
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <TextField fx:id="username" layoutX="113.0" layoutY="65.0" prefHeight="49.0" prefWidth="245.0" AnchorPane.topAnchor="65.0">
+               <font>
+                  <Font size="15.0" />
+               </font></TextField>
+            <Label layoutX="16.0" layoutY="129.0" prefHeight="49.0" prefWidth="79.0" text="密码">
+               <font>
+                  <Font size="25.0" />
+               </font></Label>
+            <CheckBox fx:id="pass_toggle" layoutX="390.0" layoutY="150.0" mnemonicParsing="false" onAction="#togglevisiblePassword" selected="false" text="显示密码">
+               <font>
+                  <Font size="19.0" />
+               </font></CheckBox>
+            <TextField fx:id="pass_text" layoutX="113.0" layoutY="130.0" prefHeight="49.0" prefWidth="245.0">
+               <font>
+                  <Font size="15.0" />
+               </font></TextField>
+            <PasswordField fx:id="pass_hidden" layoutX="113.0" layoutY="130.0" prefHeight="49.0" prefWidth="245.0">
+               <font>
+                  <Font size="15.0" />
+               </font></PasswordField>
+            <JFXButton id="login" buttonType="RAISED" layoutX="150.0" layoutY="186.0" onAction="#login" prefHeight="36.0" prefWidth="164.0" ripplerFill="#87dfe1c4" text="登录">
+               <font>
+                  <Font size="17.0" />
+               </font></JFXButton>
+            <JFXCheckBox fx:id="remember" checkedColor="#55c4d0" layoutX="16.0" layoutY="195.0" onMouseClicked="#handleSubmitButtonAction" prefHeight="26.0" prefWidth="103.0" text="记住密码">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXCheckBox>
+            <JFXButton id="register" layoutX="310.0" layoutY="197.0" onAction="#register" prefHeight="16.0" prefWidth="99.0" text="注册用户" />
+         </children>
+         <opaqueInsets>
+            <Insets right="200.0" />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="10.0" left="20.0" right="10.0" />
+         </padding>
+      </AnchorPane>
+
+   </children>
+
+   <padding>
+      <Insets bottom="100.0" left="100.0" right="100.0" top="100.0" />
+   </padding>
+</AnchorPane>

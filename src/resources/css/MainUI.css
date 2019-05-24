@@ -1,0 +1,90 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.root {
+-fx-background-color:#2E2E2E;
+}
+
+#hbox {
+   -fx-background-color: #3B3B3B;
+   -fx-spacing: 10;
+
+
+}
+#lable0{
+-fx-background-color:#202020;
+
+}
+#lable1{
+-fx-background-color:#202020;
+-fx-text-fill:white;
+
+}
+#tv{
+-fx-border-radius:2;
+-fx-border-color:black;
+}
+.button{
+-fx-background-color:#2E2E2E;
+-fx-text-fill:white;
+
+}
+.tree-cell{
+-fx-background-color:#3B3B3B;
+-fx-text-fill:#AAAAAA;
+}
+.tree-cell:hover{
+-fx-background-color:#282828;
+-fx-text-fill:white;
+}
+.tree-cell .tree-disclosure-node .arrow {
+    -fx-shape: "M 0 0 L 0 -4 L 6 -4 L 7 -3 L 8 -2 L 9 -2 L 10 -1 L 12 0 L 12 7 L 11 8 L 1 8 L 0 7 L 0 0 L 12 0";
+    -fx-scale-shape: false;
+    -fx-border-color:#00FFFF;
+    -fx-background-color:#3B3B3B;
+    -fx-border-width: 0.083333em;
+}
+.tree-cell:expanded .tree-disclosure-node .arrow {
+    -fx-rotate: 0;
+    -fx-scale-shape: false;
+     -fx-background-color:#3B3B3B;
+     -fx-border-color:#00FFFF;
+    -fx-shape: "M 0 0 L 12 0 L 15 -10 L 6 -10 L 0 0 L 0 -8 L 4 -8";
+}
+#picture_show{
+-fx-padding:10;
+-fx-spacing: 10;
+}
+#lableanchorpane{
+-fx-background-color:#202020;
+}
+#labela{
+
+-fx-background-color:#2E2E2E;
+}
+#labelb{
+
+-fx-background-color:#3B3B3B;
+-fx-text-fill:white;
+}
+#labelc{
+-fx-background-color:#2E2E2E;
+}
+#ex{
+-fx-background-image: url(/resources/image/pull.png);
+-fx-background-size:cover;
+}
+#ex:hover{
+}
+#put{
+-fx-background-image: url(/resources/image/put2.png);
+-fx-background-size:cover;
+}
+#ser{
+-fx-background-image: url(/resources/image/ser.png);
+-fx-background-size:cover;
+}
+#endSer{
+-fx-background-image: url(/resources/image/endSer.png);
+-fx-background-size:cover;
+}
+
+

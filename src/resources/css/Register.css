@@ -1,0 +1,26 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.root {
+-fx-background-image: url(/resources/image/33444.jpg);
+	-fx-background-position:0px 0px;
+	-fx-background-size:1366px 718px;
+}
+#registerback{
+	-fx-background-image:url(/resources/image/turnback2.png);
+	-fx-background-size:cover;
+}
+#registerback:hover{
+	-fx-cursor: hand;
+	-fx-background-image:url(/resources/image/turnback.png);
+	-fx-background-size:cover;
+}
+#vbox{
+-fx-background-color:white;
+-fx-background-radius:10;
+}
+#sure{
+-fx-background-color:white;
+-fx-background-radius:10;
+}
+
+
+
